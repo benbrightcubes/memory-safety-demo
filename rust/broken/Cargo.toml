@@ -1,0 +1,9 @@
+[package]
+name = "broken"
+version = "0.1.0"
+edition = "2021"
+description = "Memory Safety Demo — Rust met use-after-return bug (compileert niet)"
+
+[[bin]]
+name = "broken"
+path = "src/main.rs"

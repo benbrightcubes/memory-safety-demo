@@ -1,0 +1,8 @@
+[package]
+name = "challenge-b-solution"
+version = "0.1.0"
+edition = "2021"
+description = "Bronze-level referentie-implementatie voor de Inventory Tracker challenge"
+
+[lib]
+path = "src/lib.rs"

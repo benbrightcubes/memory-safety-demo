@@ -1,0 +1,12 @@
+[package]
+name = "challenge-a-solutions"
+version = "0.1.0"
+edition = "2021"
+description = "Drie correcte oplossingen voor de first_line lifetime puzzle"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "challenge-a-solutions"
+path = "src/main.rs"

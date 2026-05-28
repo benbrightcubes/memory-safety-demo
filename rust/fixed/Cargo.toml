@@ -1,0 +1,9 @@
+[package]
+name = "fixed"
+version = "0.1.0"
+edition = "2021"
+description = "Memory Safety Demo — Rust correcte versie"
+
+[[bin]]
+name = "fixed"
+path = "src/main.rs"
