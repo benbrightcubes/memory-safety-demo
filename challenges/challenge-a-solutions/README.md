@@ -19,7 +19,9 @@ fn first_line(s: &str) -> &str {
 **Eigenschappen**:
 - One-liner, idiomatisch
 - Werkt voor alle inputs inclusief lege string en string die met `\n` begint
-- Geen unsafe, geen unwrap, geen clone
+- Geen unsafe, geen clone
+
+> **`.unwrap_or()` is geen `.unwrap()`.** De regel verbiedt `.unwrap()` en `.expect()` — de panic-varianten die je programma laten crashen bij `None`. `.unwrap_or("")` paniekt nooit; het geeft simpelweg de default terug. Het is een veilige `Option`-combinator en dus volledig toegestaan. Een `grep unwrap` matcht ze allebei, dus het lijkt verwarrend — maar het zijn fundamenteel verschillende methoden. Wie tijdens de talk muggenzift: wijs naar oplossing 2 hieronder, die nul unwrap-varianten gebruikt.
 
 ---
 
@@ -41,6 +43,7 @@ fn first_line(s: &str) -> &str {
 - `find` retourneert `Option<usize>` — typisch Rust patroon voor "maybe niet gevonden"
 - Slice-indexing met `&s[..i]` is zero-cost, geen allocation
 - Iets meer regels dan optie 1, maar didactisch helderder
+- **Gebruikt nul unwrap-varianten** — de strikste interpretatie van de regel. Pak deze als iemand twijfelt of `.unwrap_or()` wel mag.
 
 ---
 
