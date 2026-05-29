@@ -123,7 +123,7 @@ Vervang `String` keys door een `enum Product { Coffee, Tea, ... }`. Maak het com
 
 ## Hoe in te leveren
 
-Fork de repo, maak je oplossing in `challenges/challenge-b/`, en stuur een pull request met je naam en welk niveau je hebt bereikt. Wie de Gold-versie inlevert met een schone implementatie en passende tests krijgt een biertje na de volgende sessie.
+Fork de repo, maak je oplossing in `challenges/challenge-b/`, en stuur een pull request met je naam en welk niveau je hebt bereikt. Wie de Gold-versie het beste inlevert (jury: Annett & Ben) met een schone implementatie en passende tests krijgt een prijs na de volgende sessie.
 
 ## Hint
 
