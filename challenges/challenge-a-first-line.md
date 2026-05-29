@@ -24,7 +24,9 @@ fn main() {
 
 - Geen `String`, geen `to_string()`, geen `clone()`
 - Geen externe crates — alleen `std`
-- Geen `unwrap()` of `expect()`
+- Geen `.unwrap()` of `.expect()` — de panic-varianten
+
+> Let op: `.unwrap_or(...)`, `.unwrap_or_else(...)` en `.map_or(...)` zijn wél toegestaan. Dat zijn veilige `Option`-combinators die nooit paniekken — precies het soort idiomatische foutafhandeling dat deze challenge wil aanmoedigen. Het verbod gaat alleen over de panic-varianten `.unwrap()` en `.expect()`.
 
 ## Bonus
 
